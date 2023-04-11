@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: inherit;
+}
+
+button {
+  background-color: transparent;
+}
+
+.dropdown-menu-container {
+  position: relative;
+}
+
+.dropdown-menu {
+  background-color: #fff;
+  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.75);
+  margin-top: 7px;
+  max-width: 150px;
+  text-align: center;
+
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: all 0.5s;
+  z-index: 50;
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+}
+
+.dropdown-menu > ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown-menu > ul > li {
+  margin: 0.25em 0.35em;
+  padding: 0.4em 0;
+  border-radius: 5px;
+  background-color: inherit;
+  transition: background-color 0.6s;
+  cursor: pointer;
+}
+
+.dropdown-menu > ul > li:hover {
+  background-color: rgb(230, 228, 228);
+}
+
+.dropdown-menu > ul > li > a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
